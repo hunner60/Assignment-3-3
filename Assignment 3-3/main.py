@@ -1,4 +1,3 @@
-
 # Function:     This program determines if a date entered by the user is valid.  
 # Input:        Interactive
 # Output:       Valid date is printed or user is alerted that an invalid date was entered.
@@ -16,9 +15,6 @@ day = None
 
 # Get the year, then the month, then the day
 # housekeeping()
-year = input("Enter a year: ")
-month = input("Enter a month (1-12): ")
-day = input("Enter a day (1-31): ")
 
 # Check to be sure date is valid
 
@@ -34,7 +30,5 @@ elif int(day) < MIN_DAY or int(day) > MAX_DAY: # invalid day
 # endOfJob()
 if validDate == True:
     # Output statement
-    print(f"The date {month}/{day}/{year} is valid.")
 else:
     # Output statement
-    print(f"The date {month}/{day}/{year} is invalid.")

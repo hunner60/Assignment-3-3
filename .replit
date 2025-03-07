@@ -13,3 +13,14 @@ requiredFiles = [".replit", "replit.nix"]
 [deployment]
 run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
+
+[workflows]
+runButton = "Run Assignment 3-3"
+
+[[workflows.workflow]]
+name = "Run Assignment 3-3"
+author = 39914544
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python 'Assignment 3-3/main.py'"
